@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function SkillBox({ icon, title, details = [] }) {
   return (
-    <>
+    <div className="skill-professional col-span-6 bg-[#FEFEFE] shadow-md p-[25px]">
       <div className="Skill-title -mt-[56px] flex flex-col items-center">
         <div className="Skill-icon mx-[10px] w-[62px] h-[62px] text-center justify-center inline-flex items-center drop-shadow-xl text-[24px] text-white bg-primary-low focus:outline-none rounded-[100%]">
           <FontAwesomeIcon icon={icon} />
@@ -30,7 +30,7 @@ function SkillBox({ icon, title, details = [] }) {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 
