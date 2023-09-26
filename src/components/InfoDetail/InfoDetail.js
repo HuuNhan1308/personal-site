@@ -1,6 +1,6 @@
-function InfoDetail() {
+function InfoDetail({ ...attrs }) {
   return (
-    <div className="section-about relative pt-[25px] pb-[50px]">
+    <div className="section-about relative pt-[25px] pb-[50px]" {...attrs}>
       <div className="relative p-[25px] grid grid-cols-12 gap-6 bg-[#FEFEFE] shadow-xl">
         {/* Info detail Column */}
         <div className="info-list col-span-5">

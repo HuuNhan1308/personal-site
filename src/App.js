@@ -1,10 +1,16 @@
-import { faFacebookF, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Images } from './assets/img';
 import FixImg from './components/FixImg';
 import ShortInfoBar from './components/ShortInfoBar';
 import SkillBox from './components/SkillBox';
-import { faGear, faUser } from '@fortawesome/free-solid-svg-icons';
 import InfoDetail from './components/InfoDetail';
+import { faFacebookF, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGear, faUser } from '@fortawesome/free-solid-svg-icons';
+
+// CSS ANIMATION
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Card from './components/Card';
+AOS.init();
 
 function App() {
   return (
@@ -23,16 +29,17 @@ function App() {
             fullname={'Ho Huu Nhan'}
             subtitle={'UX/UI Designer & Front-end Developer'}
             icons={[faFacebookF, faGithub, faInstagram]}
+            data-aos="fade-up"
           />
         </div>
 
         {/* Main Info */}
         <div className="wrapper relative mx-auto max-w-[1100px]">
           {/* Info detail */}
-          <InfoDetail />
+          <InfoDetail data-aos="fade-up" data-aos-duration="1000" />
 
           {/* Skills */}
-          <div className="section-skills py-[50px]">
+          <div className="section-skills py-[50px]" data-aos="fade-up">
             <div className="title relative h-[70px] text-[40px] font-thin text-center">Skills</div>
 
             {/* Skill Boxes */}
@@ -64,10 +71,13 @@ function App() {
           </div>
 
           {/* My Projects */}
-          <div className="section-projects py-[50px]">
+          <div className="section-projects py-[50px]" data-aos="fade-up">
             <div className="title relative h-[70px] text-[40px] font-thin text-center">
               My projects
             </div>
+
+            <Card />
+            <Card />
           </div>
         </div>
       </div>
