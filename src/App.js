@@ -10,6 +10,7 @@ import { faGear, faUser } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Card from './components/Card';
+import { routes } from './routes/routes';
 AOS.init();
 
 function App() {
@@ -76,8 +77,14 @@ function App() {
               My projects
             </div>
 
-            <Card />
-            <Card />
+            <div className="items grid grid-cols-3 gap-6" data-aos="fade-up">
+              <Card
+                title="Web Programming week 4"
+                description="Survey with servlet"
+                image={Images.week4}
+                link={routes.week4}
+              />
+            </div>
           </div>
         </div>
       </div>
