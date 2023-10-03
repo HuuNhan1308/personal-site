@@ -1,4 +1,5 @@
 export const routes = {
-  week4: '/exercises/week4',
+  week6_ex1: '/week6_ex1',
+  week6_ex2: '/week6_ex2',
   home: '/',
 };

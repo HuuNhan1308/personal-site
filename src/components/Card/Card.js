@@ -4,8 +4,8 @@ function Card({ title, description, image, className, link, attrs }) {
       class={'max-w-sm bg-white border border-gray-200 rounded-lg shadow' + className}
       {...attrs}
     >
-      <a href={link}>
-        <img class="rounded-t-lg" src={image} alt="" />
+      <a href={link} className="block h-[250px]">
+        <img class="rounded-t-lg h-full w-full" src={image} alt="" />
       </a>
       <div class="p-5">
         <a href={link}>
