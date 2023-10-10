@@ -22,7 +22,7 @@ function App() {
       </div>
 
       {/* App Container */}
-      <div className="App-container relative bg-[#eeeeee] h-[500vh] font-roboto">
+      <div className="App-container relative bg-[#eeeeee] font-roboto">
         {/* Short Info */}
         <div className="section-start relative mt-[320px]">
           <ShortInfoBar
@@ -41,10 +41,12 @@ function App() {
 
           {/* Skills */}
           <div className="section-skills py-[50px]" data-aos="fade-up">
-            <div className="title relative h-[70px] text-[40px] font-thin text-center">Skills</div>
+            <div className="title relative h-[70px] text-[40px] font-thin text-center mb-6 md:mb-0">
+              Skills
+            </div>
 
             {/* Skill Boxes */}
-            <div className="grid grid-cols-12 gap-6">
+            <div className="grid md:grid-cols-2 md:gap-x-6 gap-y-12">
               <SkillBox
                 icon={faGear}
                 title="Professional"
@@ -77,7 +79,10 @@ function App() {
               My projects
             </div>
 
-            <div className="items grid grid-cols-3 gap-6" data-aos="fade-up">
+            <div
+              className="items grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-4"
+              data-aos="fade-up"
+            >
               {Projects.map((project, index) => (
                 <Card
                   key={index}

@@ -23,7 +23,7 @@ function ShortInfoBar({ image, fullname, subtitle, icons = [], className, ...att
           <button
             key={index}
             type="button"
-            class="mx-[10px] drop-shadow-xl text-white bg-primary-low hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[100%] text-sm w-[40px] h-[40px] text-center justify-center inline-flex items-center"
+            className="mx-[10px] drop-shadow-xl text-white bg-primary-low hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[100%] text-sm w-[40px] h-[40px] text-center justify-center inline-flex items-center"
           >
             <a className="text-[18px]" href="https://www.facebook.com/hh.nhan1308/">
               <FontAwesomeIcon icon={icon} />
